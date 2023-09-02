@@ -32,6 +32,11 @@ case "$ARCH" in
 		export TARGET_ABI=x86_64
 		export ANDROID_ABI=$TARGET_ABI
 		export TARGET=x86_64-linux-android ;;
+  	"x86")
+		### toolchain config for x86_64
+		export TARGET_ABI=x86
+		export ANDROID_ABI=$TARGET_ABI
+		export TARGET=x86-linux-android ;;
 	*)
 		echo "Don't ask to use $ARCH"
 		exit 1 ;;
